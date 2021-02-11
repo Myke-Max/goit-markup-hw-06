@@ -453,7 +453,15 @@
 
         <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <form class="form" autocomplete="off">
+                   
+                    <button type="button" class="close" data-modal-close >
+                        <svg class="icon-close"width="18" height="18">
+                            <use href="./img/sprite-icon.svg#icon-close" ></use>
+                        </svg>
+                        
+                        
+                    </button>
+                     <form class="form" autocomplete="off">
                         <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                         <div class="form-field">
                             <svg class="icon-name" width="12" height="12">
@@ -468,7 +476,7 @@
                     
                         <div class="form-field">
                             <svg class="icon-name" width="13" height="13">
-                                <use href="./img/sprite-icon.svg#icon-tel"></use>
+                                <use href="./img/sprite-icon.svg#icon-telefone"></use>
                             </svg>
                             <input type="tel" class="form-input" id="tel" placeholder=" ">
                             <label for="tel" class="form-label">
@@ -487,27 +495,21 @@
                             </label>
                             
                         </div>
-                            <label class="comments-title ">Комментарий</label>
-                            <textarea class="comments" name="comments" placeholder="Введите текст"></textarea>
-                        
-                    
-                        <div>
-                            <label class="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
-                                <input type="checkbox">
+                            <label class="comments-title ">Комментарий
+                                <textarea class="comments" name="comments" placeholder="Введите текст"></textarea>
                             </label>
-                        </div>
+                    
+                            <input type="checkbox">
+                            <label class="policy">
+                                Соглашаюсь с рассылкой и принимаю <href href="#">Условия договора</href>
+                            </label>
+                            
+                        
                     
                         <button type="submit" class="send-btn">Отправить</button>
                     
                     
                     </form>
-                    <button type="button" class="close" data-modal-close >
-                        <svg class="icon-close"width="18" height="18">
-                            <use href="./img/sprite-icon.svg#icon-close" ></use>
-                        </svg>
-                        
-                        
-                    </button>
                 </div>
         </div>
 
