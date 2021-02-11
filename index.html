@@ -437,21 +437,15 @@
         
         <div class="subscribe">
             <b class="subscribe-title">Подпишитесь на рассылку</b>
-            <form>
-                <div class="send-container">
-                    <label for="email">
-                        <input type="email" name="email" id="email" placeholder="E-mail" required>
-                        <button class="subscribe-btn" type="submit">Подписаться</button>
-                    <div class="envelope">
-                        <svg class="icon-send" width="24" height="24">
-                            <use href="./img/sprite-icon.svg#icon-send"></use>
-                        </svg>
-                    </div>
-                        
+            <form class="subscribe-form">
                     
-                    </label>
-                </div>
-                
+                        <input type="email" name="email" id="subscribe" placeholder="E-mail" required>
+                        <button class="subscribe-btn" type="submit">Подписаться
+                            <svg class="icon-send" width="24" height="24">
+                                <use href="./img/sprite-icon.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    
             </form>
         </div>
     </div>
@@ -498,7 +492,7 @@
                         
                     
                         <div>
-                            <label class="policy">Соглашаюсь с рассылкой и принимаю Условия договора
+                            <label class="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
                                 <input type="checkbox">
                             </label>
                         </div>

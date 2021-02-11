@@ -616,8 +616,13 @@ header .container {
   margin-bottom: 20px;
 }
 
-.subscribe .send-container {
-  position: relative;
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe .subscribe-form {
+  display: flex;
 }
 
 .subscribe input {
@@ -626,9 +631,11 @@ header .container {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .subscribe .subscribe-btn {
@@ -637,13 +644,13 @@ header .container {
   line-height: 1.878;
 
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: left;
+
   letter-spacing: 0.06em;
 
   color: var(--text-title-white);
   background-color: var(--accent-color);
-  display: inline-block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
   border-radius: 4px;
@@ -655,10 +662,8 @@ header .container {
 }
 
 .subscribe .icon-send {
-  fill: var(--text-title-white);
-  position: absolute;
-  right: 28px;
-  top: 13px;
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 /* Modal window */
@@ -774,6 +779,11 @@ header .container {
   border-radius: 4px;
 }
 
+.form .form-input:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
 .form .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-40px) translateX(-40px);
 }
@@ -808,7 +818,6 @@ header .container {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
   display: flex;
   align-items: center;
   text-align: center;
