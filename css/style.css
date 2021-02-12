@@ -29,6 +29,18 @@
   --bgc-portfolio-text: rgba(33, 150, 243, 0.9);
   --border-modal: 1px solid rgba(33, 33, 33, 0.2);
 }
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* Body */
 body {
   background-color: #ffffff;
@@ -758,8 +770,6 @@ header .container {
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: var(--general-color-text);
-
   transition: transform var(--timing250ms) var(--timing-function);
 }
 .form .icon-name {
@@ -812,6 +822,7 @@ header .container {
   border-radius: 4px;
   font-family: inherit;
   margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 .form .comments::placeholder {
@@ -829,16 +840,31 @@ header .container {
 }
 
 .form .policy {
-  display: inline-block;
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .form .policy::before {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: lawngreen;
+  content: "";
+  width: 16px;
+  height: 15px;
+  outline: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.form .checkbox:checked + .policy::before {
+  background-color: var(--accent-color);
+  outline: transparent;
+  background-image: url(../img/modal-form/check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: outline var(--timing-function) var(--timing250ms);
+}
+
+.form .checkbox:focus + .policy::before {
+  outline: 2px solid var(--accent-color);
 }
 
 .form .send-btn {
