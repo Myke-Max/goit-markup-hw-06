@@ -689,12 +689,11 @@ header .container {
   transform: translate(-50% -50%) scale(1);
 }
 .modal {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  width: 528px;
-  height: 581px;
   background-color: var(--text-title-white);
   transition: opacity var(--timing250ms) var(--timing-function);
   padding: 40px;
