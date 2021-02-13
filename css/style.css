@@ -784,6 +784,7 @@ header .container {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  cursor: pointer;
   transition: var(--timing250ms) var(--timing-function);
 }
 .form .icon-name {
@@ -805,6 +806,7 @@ header .container {
   border: var(--border-modal);
   border-radius: 4px;
   font-family: inherit;
+  cursor: pointer;
   transition: border var(--timing250ms) var(--timing-function);
 }
 
@@ -839,6 +841,8 @@ header .container {
   font-family: inherit;
   margin-top: 4px;
   margin-bottom: 20px;
+
+  cursor: pointer;
   transition: border var(--timing250ms) var(--timing-function);
 }
 
@@ -868,6 +872,9 @@ header .container {
 
 .form .terms {
   color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .form .policy::before {
@@ -878,6 +885,7 @@ header .container {
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 8px;
+  cursor: pointer;
   transition: var(--timing250ms) var(--timing-function);
 }
 
